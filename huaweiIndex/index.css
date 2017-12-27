@@ -1,0 +1,741 @@
+/*顶部*/
+body {
+    overflow-x: hidden;
+}
+
+.top {
+    height: 81px;
+}
+
+.top a {
+    color: #333333;
+    height: 53px;
+}
+
+.lan {
+    height: 28px;
+    line-height: 28px;
+    text-align: right;
+}
+
+.topL a {
+    font-size: 14px;
+    padding-left: 26px;
+}
+
+.topL a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#log {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#log img {
+    margin-right: 20px;
+}
+
+#log ul li {
+    float: left;
+    padding: 0 13px;
+}
+
+#log .wx {
+    width: 73px;
+    height: 38px;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    margin: 0 13px;
+}
+
+#log .wx i {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    left: -3px;
+    bottom: -3px;
+    background: url(images/hw1_sprite.png) -102px -80px;
+}
+
+#log .wx:hover {
+    background-color: #e22835;
+}
+
+#log .wx a:hover {
+    color: #fff;
+}
+
+#log ul a {
+    display: inline-block;
+}
+
+#log > ul > li:first-child {
+    padding-left: 0;
+}
+
+#log > ul > li:first-child a {
+    box-sizing: border-box;
+    width: 88px;
+}
+
+#log ul a:hover {
+    color: #e22835;
+    border-bottom: 2px solid #cb3034;
+}
+
+.topN {
+    position: relative;
+}
+
+/*下拉菜单选项1*/
+.wxx {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    left: 0;
+    top: 53px;
+    height: 269px;
+}
+
+.wxx > ul > li {
+    float: left;
+    width: 334px;
+    height: 269px;
+    text-align: left;
+    padding-top: 45px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.wxx > ul > li:hover {
+    background-color: #ccc;
+}
+
+.wxx li img {
+    text-align: left;
+    float: left;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.wxx > ul > li li {
+    height: 30px;
+    line-height: 25px;
+    padding: 0 10px;
+}
+
+.wxx > ul > li:last-child {
+    border-left: 1px solid rgb(213, 213, 213);
+}
+
+.wxx > ul > li li a {
+    font-size: 16px;
+}
+
+.online {
+    margin-top: 0 !important;
+}
+
+.online:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+    background-color: rgb(204, 204, 204) !important;
+}
+
+.wxx > ul > li li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.wxx > ul > li li:last-child a {
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: -10px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.wxx > ul > li li:last-child a:hover {
+    background-color: #cb3034;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*下拉菜单选项2*/
+.xl2 {
+    display: none;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    background-color: rgb(241, 241, 241);
+}
+
+.xl2 li {
+    height: 300px;
+    width: 222px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+
+.xl2 li:hover {
+    background-color: #ccc;
+}
+
+.xl2 li h3 {
+    font-size: 19px;
+    color: #cb3034;
+}
+
+.xl2 li img {
+    margin: 15px auto;
+}
+
+.xl2 li p {
+    height: 35px;
+    font-size: 16px;
+}
+
+.xl2 li a {
+    display: inline-block;
+    color: #333333;
+    padding: 6px;
+    height: 23px;
+}
+
+.xl2 li a:hover {
+    background-color: #cb3034;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*下拉菜单选项4*/
+/*下拉菜单选项3*/
+.xl3 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    height: 421px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.xl3 ul {
+    margin-left: 60px;
+}
+
+.xl3 li {
+    float: left;
+    width: 225px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 421px;
+}
+
+.xl3 li h3 {
+    font-size: 18px;
+    color: #e22835;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.xl3 li h4 {
+    color: #999;
+    height: 30px;
+}
+
+.xl3 li p {
+    height: 28px;
+    font-size: 16px;
+}
+
+.xl3 li:hover {
+    background-color: #ccc;
+}
+
+.xl3 li a {
+    display: inline-block;
+    color: #333333;
+    padding: 6px;
+    height: 23px;
+}
+
+.xl3 li a:hover {
+    background-color: #cb3034;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.xl-t {
+    padding-top: 30px;
+    margin-right: 80px;
+    padding-left: 30px;
+    width: 293px;
+    height: 421px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.xl-t img {
+    width: 231px;
+}
+
+.xl-t:hover {
+    background-color: #ccc;
+}
+
+.xl-t a {
+    display: inline-block;
+    height: 30px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.xl-t a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*4*/
+.xl4 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    height: 421px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.xl4 ul {
+    margin-left: 60px;
+}
+
+.xl4 li {
+    float: left;
+    width: 225px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 421px;
+}
+
+.xl4 li h3 {
+    font-size: 18px;
+    color: #e22835;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.xl4 li h4 {
+    color: #999;
+    height: 30px;
+}
+
+.xl4 li p {
+    height: 28px;
+    font-size: 16px;
+}
+
+.xl4 li:hover {
+    background-color: #ccc;
+}
+
+.xl4 li a {
+    display: inline-block;
+    color: #333333;
+    padding: 6px;
+    height: 23px;
+}
+
+.xl4 li a:hover {
+    background-color: #cb3034;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.xl5 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    height: 421px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.xl5 ul {
+    margin-left: 60px;
+}
+
+.xl5 li {
+    float: left;
+    width: 225px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 421px;
+}
+
+.xl5 li h3 {
+    font-size: 18px;
+    color: #e22835;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.xl5 li h4 {
+    color: #999;
+    height: 30px;
+}
+
+.xl5 li p {
+    height: 28px;
+    font-size: 16px;
+}
+
+.xl5 li:hover {
+    background-color: #ccc;
+}
+
+.xl5 li a {
+    display: inline-block;
+    color: #333333;
+    padding: 6px;
+    height: 23px;
+}
+
+.xl5 li a:hover {
+    background-color: #cb3034;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.xl6 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    height: 421px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.xl6 ul {
+    margin-left: 60px;
+}
+
+.xl6 li {
+    float: left;
+    width: 225px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 421px;
+}
+
+.xl6 li h3 {
+    font-size: 18px;
+    color: #e22835;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.xl6 li h4 {
+    color: #999;
+    height: 30px;
+}
+
+.xl6 li p {
+    height: 28px;
+    font-size: 16px;
+}
+
+.xl6 li:hover {
+    background-color: #ccc;
+}
+
+.xl6 li a {
+    display: inline-block;
+    color: #333333;
+    padding: 6px;
+    height: 23px;
+}
+
+.xl6 li a:hover {
+    background-color: #cb3034;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*banner*/
+
+.lunB {
+    position: relative;
+    z-index: -999;
+
+}
+
+.lunB li img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.2),
+    inset 1px 0px 0px rgba(34, 25, 25, 0.2)
+}
+
+.lunbo {
+    height: 100%;
+}
+
+.lunB li {
+    position: absolute;
+    /*left: 50%;*/
+    /*margin-left: -960px;*/
+    text-align: center;
+}
+
+.banner {
+    height: 515px;
+    position: relative;
+
+}
+
+.an {
+    position: absolute;
+    left: 50%;
+    bottom: 37px;
+    margin-left: -80px;
+}
+
+.an li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 5px;
+    background-color: #888;
+    cursor: pointer;
+}
+
+.an .active {
+    background-color: #ccc;
+}
+
+.pico, .pict {
+    /*display: none;*/
+    display: block !important;
+    position: absolute;
+    z-index: -9 !important;
+}
+
+.pict {
+    left: 453px;
+    top: 130px;
+    /*bottom: -284px;*/
+}
+
+.pico {
+    /*left: 780px;*/
+    right: -370px;
+    top: 200px;
+}
+
+.lunbo span {
+    display: inline-block;
+    width: 42px;
+    height: 80px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.leftJ {
+    background: url(images/hw1_sprite.png) -100px -506px;
+    left: 20px;
+    top: 200px;
+}
+
+.rightJ {
+    position: absolute;
+    background: url(images/hw1_sprite.png) -99px -611px;
+    right: 20px;
+    top: 200px;
+}
+
+/*中部*/
+#middle img, #middle h3, #middle p,#middle a {
+    position: relative;
+}
+#middle h3, #middle p {
+    color: #fff;
+}
+/*.move:hover {*/
+    /*background-color: rgba(0,0,0,0.5);*/
+/*}*/
+.mid {
+    height: 728px;
+}
+.minLeft {
+    width: 655px;
+    height: 720px;
+    overflow: hidden;
+    z-index:999;
+}
+.minRight {
+    width: 655px;
+    height: 720px;
+    overflow: hidden;
+}
+
+.minRightUp {
+    margin-bottom: 17px;
+    height: 342px;
+}
+#middle h3 {
+    font-size: 30px;
+    width: 410px;
+    left: 40px;
+    bottom: 150px;
+}
+
+#middle p {
+    width: 410px;
+    left: 40px;
+    bottom: 140px;
+    font-size: 16px;
+    line-height: 21px;
+    opacity:0;
+}
+
+.midD {
+    height: 350px;
+}
+
+.midDl {
+    width: 655px;
+    height: 370px;
+    overflow: hidden;
+}
+/*新闻*/
+.rentou {
+    height: 560px;
+    margin-bottom: 25px;
+}
+.but {
+    width: 100%;
+    text-align: center;
+    /*margin-bottom: 20px;*/
+}
+.news  {
+    background-color: rgba(245,245,245,0.7);
+    height: 341px;
+    padding-top: 30px;
+}
+.new-le {
+    width: 460px;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+.new-le p {
+    width: 370px;
+}
+.news h4 {
+    font-size: 24px;
+    color: #333;
+    height: 43px;
+}
+.news p {
+    font-size: 16px;
+    line-height: 30px;
+}
+.news h4:hover,.news p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+.news a {
+    height: 24px;
+    font-size: 14px;
+    color: #999;
+}
+.new-ri {
+    width: 780px;
+}
+.new-ri img {
+    width: 340px;
+}
+.new-ri li {
+    float: left;
+    width: 370px;
+}
+/*底部*/
+.footer {
+    height: 313px;
+    background-color: rgb(39,39,39);
+    color: #fff;
+    padding-top: 35px;
+    color: #ccc;
+}
+.frendlink dl {
+    float: left;
+    width: 140px;
+    margin-left: 60px;
+}
+.frendlink dt {
+    height: 33px;
+    font-size: 16px;
+}
+.frendlink dd {
+    height: 23px;
+    font-size: 14px;
+}
+.frendlink dd:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.erm h3 {
+    font-size: 16px;
+    line-height: 31px;
+}
+.erm {
+    padding-left: 50px;
+}
+.copy {
+    height: 67px;
+    line-height: 67px;
+    border-top:1px solid #424141;
+    font-size: 14px;
+}
+.copy p {
+    display: inline-block;
+    margin-left: 75px;
+
+}
+.dbl {
+    float: right;
+    margin-right: 100px;
+}
+.copy a {
+    font-size: 14px;
+    margin-right: 15px;
+}
+.copy a:hover {
+    text-decoration: underline;
+}

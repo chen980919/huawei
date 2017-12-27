@@ -1,0 +1,86 @@
+body {
+    overflow-x: hidden;
+}
+/*部吸顶部分 start*/
+#top {
+    position: fixed;
+    top: 9px;
+    left: 83px;
+    z-index: 999;
+}
+/*顶部吸顶部分 end*/
+/*顶部图片部分 start*/
+#top-img {
+    height:1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    /*overflow: hidden;*/
+}
+/*顶部图片部分 end*/
+/*尊享部分 start*/
+#zx {
+    background: url(images/2P_bg.jpg);
+}
+/*尊享部分 end*/
+#jc {
+    height: 700px;
+    background: url(images/3P.jpg);
+}
+.jm {
+    padding-top: 161px;
+}
+.jm a {
+    display: inline-block;
+    width: 398px;
+    height: 160px;
+    position: relative;
+}
+.jm>a {
+    width: 1200px;
+    height: 160px;
+    display: inline-block;
+}
+.jm li {
+    float: left;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+.jm li:nth-child(4) {
+    width: 398px;
+    height: 160px;
+}
+.jm li:nth-child(3),.jm li:nth-child(6) {
+    margin-right: 0;
+}
+.jb li {
+    float: left;
+}
+.jb li a {
+    display: inline-block;
+    width: 960px;
+    height: 400px;
+}
+.footer {
+    position: relative;
+}
+.footer a {
+    position: absolute;
+    display: inline-block;
+    width: 154px;
+    height: 35px;
+    left: 800px;
+    top: 1632px;
+    line-height: 37px;
+    text-align: center;
+    border:1px solid #b0aaa1;
+    z-index: 999;
+    color: #000;
+    font-size: 12px;
+}
+#top-img .footer a[href="#"] {
+    left: 967px;
+}
+.footer a:hover {
+    background-color: rgb(242,234,222);
+}

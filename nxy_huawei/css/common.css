@@ -1,0 +1,79 @@
+body, h1, h2, h3, h4, h5, h6, ul, dt, dd, dl, input, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px arial, "microsoft yahei";
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+i,b,em{
+    font-style: normal;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+input {
+    border: none;
+    outline-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #9f9f9f;
+}
+
+a:hover {
+    color: #990000;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size:13px;
+    color: #717171;
+}
+
+i {
+    font-style: normal;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

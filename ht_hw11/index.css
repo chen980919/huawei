@@ -1,0 +1,278 @@
+body {
+    overflow-x: hidden;
+    height: 7800px;
+    background: url(images/de7345de-bcec-4926-94b4-c153f07ef465.jpg) no-repeat center center;
+}
+
+.top-nav {
+    height: 86px;
+    background: url(images/59a491aa-6a09-47c1-b8e4-c0541c40e01b.png) no-repeat center center;
+
+}
+.top-nav .as {
+    margin-right:100px;
+    height: 68px;
+}
+.top-nav a {
+    float: right;
+    padding: 36px 14px 0;
+    font-size: 16px;
+    color: #fff;
+}
+.top-nav a:nth-child(1), .top-nav a:nth-child(4) {
+    line-height:15px;
+}
+.top-nav a:hover {
+    text-decoration: underline;
+    color: rgb(171,160,166);
+}
+.f {
+    height: 658px;
+}
+.uhj {
+    height: 221px;
+}
+.uh a {
+    display: inline-block;
+    width: 1920px;
+    height: 221px;
+}
+.pic,.uh,.bqh,.jp_pic,.shiyi {
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+.uhj li {
+    float: left;
+}
+/*售卖导航部分*/
+.nav {
+    height: 55px;
+    background-color: #573c5b;
+}
+.nav ul {
+    height: 55px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+.nav ul li {
+    float: left;
+}
+.nav a {
+    display: inline-block;
+    width: 240px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 18px;
+}
+.yellow {
+    background-color: #fff;
+    color: rgb(187,141,56);
+}
+.nav a:hover {
+    background-color: #fff;
+    color: rgb(187,141,56);
+}
+/*本期亮点*/
+.bq {
+    height: 3350px;
+}
+.bqp {
+    height: 440px;
+}
+/*精选数码*/
+.hpm {
+    height: 209px;
+    width: 588px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.m_pic {
+    margin-top:20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.xin img {
+    margin-right: 10px!important;
+    margin-left: 10px;
+}
+.m_pic img {
+    height: 157px;
+
+}
+.m_txt {
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+}
+.m_txt div {
+    position: absolute;
+    top: 0;
+    left: -190px;
+}
+.m_txt h3 {
+    height: 69px;
+    width: 399px;
+    line-height: 69px;
+    text-align: left;
+    font-size: 24px;
+    border-bottom:1px solid #e7e7e7;
+    display: inline-block;
+}
+.m_txt h4 {
+    height: 65px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 16px;
+}
+.m_txt i {
+    font-style: normal;;
+}
+.m_txt i,span {
+    font-size: 18px;
+    color: #c81118;
+}
+.m_txt .money {
+    font-size: 29px;
+    color: #c81118;
+}
+.m_txt a {
+    display: inline-block;
+    width: 134px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius:20px;
+    background-color: #c81118;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+/*3tab*/
+.p_nav {
+    height: 40px;
+    padding-top: 20px;
+}
+.p_nav {
+    height: 40px;
+    margin-bottom: 10px;
+}
+.p_nav li {
+    float: left;
+}
+.p_nav a {
+    display: block;
+    width: 399px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333333;
+    font-size: 18px;
+}
+.p_nav li:nth-child(1),.p_nav li:nth-child(2) {
+    border-right:1px solid #585858;
+}
+/*pingban*/
+.zjb img {
+    height: 190px;
+    margin-bottom: 20px;
+    /*padding-top: 10px;*/
+}
+/*.zjb img:hover {*/
+    /*transform: scale(1.4);*/
+/*}*/
+.zjb {
+    text-align: center;
+}
+.zjb h3 {
+    font-size:20px;
+    height: 33px;
+    color: #000;
+}
+.zjb p {
+    font-size: 14px;
+    height: 30px;
+    color: #999;
+}
+.zjb i {
+    font-style: normal;
+    font-size: 18px;
+    color: #c51118;
+}
+.zjb span {
+    font-size: 30px;
+    color: #c51118;
+}
+.zjb li {
+    float: left;
+    width: 285px;
+    height: 337px;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.zjb li:nth-child(4),.zjb li:nth-child(8) {
+    margin-right: 0;
+}
+.zjb li a {
+    display: inline-block;
+    width: 285px;
+    height: 337px;
+    position: relative;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.zjb div {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+.zjb div img {
+    width: 80px;
+    height: 80px;
+}
+/*精品配件*/
+.jpp {
+    height: 500px;
+}
+.hwvido {
+    margin-bottom: 11px;
+}
+.shiyi_pic {
+    height: 340px;
+    margin-bottom: 11px;
+}
+.last {
+    margin-top: 11px;
+}
+.footer {
+    position: relative;
+}
+.footer a {
+    position: absolute;
+    left: 450px;
+    bottom: -247px;
+    width: 220px;
+    height: 45px;
+    /*background-color: red;*/
+}
+.footer .fhdb {
+    left: 690px;
+    bottom: -247px;
+}
+.footer ul {
+    position: absolute;
+    left: 463px;
+    bottom: 240px;
+}
+.footer ul li {
+    float: left;
+    margin-right: 62px;
+}

@@ -1,0 +1,52 @@
+/*��ʼ��*/
+body,ul,li,dl,dt,dd,p,span,h1,h2,h3,h4,h5,h6,button,input{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 16px arial,"microsoft yahei";
+    color: #333;
+//background-color: #ccc;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+ul {
+    list-style: none;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+input,button {
+    border: none;
+    outline-style: none;
+}
+i {
+    font-style: normal;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #a4a4a4;
+}
+/*a:hover {*/
+/*color: lightblue;*/
+/*}*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}

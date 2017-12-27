@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华为双11</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            //兜售商品放大事件
+            $(".hpm>div>img").mouseenter(function () {
+                $(this).css({
+                    height: 168
+                })
+            });
+            $(".hpm>div>img").mouseout(function () {
+                $(this).css({
+                    height: 157
+                })
+            });
+            $(".zjb a>img").mouseenter(function () {
+                $(this).css({
+                    height: 200
+                })
+            });
+            $(".zjb a>img").mouseout(function () {
+                $(this).css({
+                    height: 190
+                })
+            });
+            //tab 点击卷曲事件//960 1800 3800  6890
+            $("#ul>li:eq(0)").click(function () {
+                $(window).scrollTop(960);
+
+            })
+            $("#ul>li:eq(1)").click(function () {
+                $(window).scrollTop(1810)
+
+            })
+            $("#ul>li:eq(2)").click(function () {
+                $(window).scrollTop(3815);
+            })
+            $("#ul>li:eq(3)").click(function () {
+                $(window).scrollTop(5548);
+            })
+            $("#ul>li:eq(4)").click(function () {
+                $(window).scrollTop(6890);
+            })
+
+            $(window).scroll(function () {
+                if ( $(this).scrollTop() >= 960) {
+                    $("#ul>li a:eq(0)").addClass("yellow");
+                    $("#ul>li a:eq(1)").prop("class","");
+                    $("#ul>li a:eq(2)").prop("class","");
+                    $("#ul>li a:eq(3)").prop("class","");
+                    $("#ul>li a:eq(4)").prop("class","");
+                }
+                if ($(this).scrollTop() >= 1810) {
+
+                    $("#ul>li a:eq(1)").addClass("yellow");
+                    $("#ul>li a:eq(0)").prop("class", "");
+                    $("#ul>li a:eq(2)").prop("class", "");
+                    $("#ul>li a:eq(3)").prop("class", "");
+                    $("#ul>li a:eq(4)").prop("class", "");
+                }
+                if ($(this).scrollTop() >= 3815) {
+
+                    $("#ul>li a:eq(2)").addClass("yellow");
+                    $("#ul>li a:eq(1)").prop("class", "");
+                    $("#ul>li a:eq(3)").prop("class", "");
+                    $("#ul>li a:eq(0)").prop("class", "");
+                    $("#ul>li a:eq(4)").prop("class", "");
+                }
+                if ($(this).scrollTop() >= 5548) {
+
+                    $("#ul>li a:eq(3)").addClass("yellow");
+                    $("#ul>li a:eq(2)").prop("class", "");
+                    $("#ul>li a:eq(0)").prop("class", "");
+                    $("#ul>li a:eq(1)").prop("class", "");
+                    $("#ul>li a:eq(4)").prop("class", "");
+                }
+                if ($(this).scrollTop() >= 6890) {
+
+                    $("#ul>li a:eq(4)").addClass("yellow");
+                    $("#ul>li a:eq(3)").prop("class", "");
+                    $("#ul>li a:eq(2)").prop("class", "");
+                    $("#ul>li a:eq(1)").prop("class", "");
+                    $("#ul>li a:eq(0)").prop("class", "");
+                }
+            })
+        });
+    </script>
+</head>
+<body class="clearfix">
+<div id="topPart">
+    <!--顶部部分-->
+    <div class="top-nav w clearfix">
+        <div class="as">
+            <a href="javascript:;">华为数码惠</a>
+            <a href="javascript:;">HUAWEI P10</a>
+            <a href="javascript:;">HUAWEI Mate 10</a>
+            <a href="javascript:;">首页</a>
+        </div>
+    </div>
+    <div class="f clearfix">
+        <div class="pic">
+            <img src="images/ef308778-0cc2-4cd2-8ac2-eef1a215b578.png" alt="">
+        </div>
+    </div>
+    <!--优惠劵抢购-->
+    <div class="uhj">
+        <div class="uh">
+            <a href="javascript:;"><img src="images/5bdcb0dd-f83b-4737-843e-8b50ee42df28.png" alt=""></a>
+
+        </div>
+    </div>
+</div>
+<!--售卖导航部分-->
+<div id="navBar">
+    <nav class="nav" id="bar">
+        <ul class="w" id="ul">
+            <li><a href="javascript:;" class="">本期亮点</a></li>
+            <li><a href="javascript:;">明星爆款</a></li>
+            <li><a href="javascript:;">数码特惠</a></li>
+            <li><a href="javascript:;">优选配件</a></li>
+            <li><a href="javascript:;">秒杀/抽奖</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="mainPart">
+    <!--本期亮点-->
+    <div class="bq w clearfix" id="bqld">
+        <div class="bqh">
+            <img src="images/ed376d51-da88-4794-a748-1fc58b8be084.png" alt="">
+            <img src="images/7ef14f72-4657-4124-98d5-652b0acd22af.png" alt="">
+            <img src="images/53779024-f678-4b91-b3b9-e023fe0d1929.png" alt="">
+            <!--明星爆款-->
+            <div id="mx"></div>
+            <img src="images/78449ee4-9e22-4665-9c40-16b8ecaca75f.png" alt="">
+            <img src="images/94a2c5c4-df64-4d5a-ba8a-05dfa67fd6d3.png" alt="">
+            <img src="images/891238b4-59bd-4bd5-947a-e874f8cf6328.png" alt="">
+            <img src="images/b4194f21-6eb4-4703-b32d-fa762d4634f1.png" alt="">
+            <img src="images/822511d4-1dcb-47b5-8251-e8cbc4cb7e8a.png" alt="">
+            <img src="images/fdab20fd-7b1f-40fc-8c01-9b020e6ee075.png" alt="">
+            <img src="images/f5aeddc2-f6af-4e3b-bbce-cd81724d1cd2.png" alt="">
+            <!--精选数码会-->
+            <div id="sm"></div>
+            <img src="images/a421b9cb-dd85-4623-a868-cd4adc25d814.png" alt="">
+            <img src="images/c52b4607-108f-4c0e-8f34-0756e5d1459a.png" alt="">
+        </div>
+    </div>
+    <div class="bqp clearfix w">
+        <div class="fl">
+            <img src="images/38d82ea5-cb0a-44aa-9f0b-eccb6ac2ed43.jpg" alt="">
+        </div>
+        <div class="fr">
+            <div class="hpm">
+                <div class="m_pic fl xin">
+                    <img src="images/0a24c2fd-bb70-48b1-a6f0-29168f214eb6.jpg" alt="">
+                </div>
+                <div class="m_txt">
+                    <h3>HUAWEI WATCH 2</h3>
+                    <h4>GPS心率FIRSTBEAT运动指导</h4>
+                    <i>¥</i>
+                    <span class="money">1528</span>
+                    <span>起</span>
+                    <a href="javascript:;">立即购买</a>
+                    <div>
+                        <img src="images/6a18dd5a-de18-4766-858a-6b45c510375c.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hpm">
+                <div class="m_pic fl">
+                    <img src="images/428_428_1473406494708mp.jpg" alt="">
+                </div>
+                <div class="m_txt">
+                    <h3>HUAWEI WATCH 2</h3>
+                    <h4>GPS心率FIRSTBEAT运动指导</h4>
+                    <i>¥</i>
+                    <span class="money">1719</span>
+                    <span>起</span>
+                    <a href="javascript:;">立即购买</a>
+                    <div>
+                        <img src="images/cd1548f5-da07-40e0-ad6d-71f0585ff0f3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--3tab   -->
+    <div class="pbz w">
+        <div class="p_nav">
+            <ul>
+                <li><a href="#">平板电脑</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">智能家庭</a></li>
+            </ul>
+        </div>
+        <div class="zjb">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1495096799385mp.jpg" alt="">
+                        <h3>华为平板M3青春版10.1英寸</h3>
+                        <p>轻薄简约外观、哈曼卡顿品质立体声</p>
+                        <i>￥</i>
+                        <span>1719</span>
+                        <div>
+                            <img src="images/cd1548f5-da07-40e0-ad6d-71f0585ff0f3.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1497422161444mp.jpg" alt="">
+                        <h3>华为平板 M3 青春版8英寸</h3>
+                        <p>全高清清晰显示、增强护眼功能</p>
+                        <i>￥</i>
+                        <span>1619</span>
+                        <div><img src="images/cd1548f5-da07-40e0-ad6d-71f0585ff0f3.png" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1473406494708mp.jpg" alt="">
+                        <h3>华为平板M3</h3>
+                        <p>哈曼卡顿高品质HI-FI音效</p>
+                        <i>￥</i>
+                        <span>1788</span>
+                        <div>
+                            <img src="images/e87778eb-c949-4b55-80a0-7b731045168f.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1469093643984mp.jpg" alt="">
+                        <h3>华为手环 B3</h3>
+                        <p>蓝牙耳机与智能手环结合</p>
+                        <i>￥</i>
+                        <span>899</span>
+                        <div><img src="images/4e986876-d0ce-4a6f-9633-d27bec310ce5.png" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1506146854504mp.jpg" alt="">
+                        <h3>华为手环B3 青春版</h3>
+                        <p>是手环，也是耳机</p>
+                        <i>￥</i>
+                        <span>459</span>
+                        <div><img src="images/7fa83a13-a912-4d51-9ae9-04ca847b6a26.png" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1498098860450mp.jpg" alt="">
+                        <h3>华为运动手环</h3>
+                        <p>50米防水游泳，心率监测</p>
+                        <i>￥</i>
+                        <span>258</span>
+                        <div><img src="images/7fa83a13-a912-4d51-9ae9-04ca847b6a26.png" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1486978872532mp.jpg" alt="">
+                        <h3>华为儿童手表</h3>
+                        <p>五重定位，防尘防水低辐射</p>
+                        <i>￥</i>
+                        <span>628</span>
+                        <div><img src="images/7fa83a13-a912-4d51-9ae9-04ca847b6a26.png" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1488177938737mp.jpg" alt="">
+                        <h3>HUAWEI WATCH 2</h3>
+                        <p>支持4G通话</p>
+                        <i>￥</i>
+                        <span>1878</span>
+                        <div><img src="images/6a18dd5a-de18-4766-858a-6b45c510375c.png" alt=""></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="yx"></div>
+    <!--精品配件-->
+    <div class="jpp clearfix">
+        <div class="jp_pic">
+            <img src="images/e0741616-4430-4a38-986c-93761391d73b.png" alt="">
+            <img src="images/846f9c36-3983-4786-b03f-a486b8c1b598.png" alt="">
+        </div>
+    </div>
+    <div class="jp_pi w">
+        <img src="images/13d4a4f0-8635-4dd7-a5f7-fd533684233a.jpg" alt="">
+    </div>
+    <!--耳机音响-->
+    <div class="pbz w">
+        <div class="p_nav">
+            <ul>
+                <li><a href="#">平板电脑</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">智能家庭</a></li>
+            </ul>
+        </div>
+        <div class="zjb">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1490921883474mp.jpg" alt="">
+                        <h3>华为20000mAh 移动电源</h3>
+                        <p>9V2A 快充版</p>
+                        <i>￥</i>
+                        <span>249</span>
+                        <!--<div><img src="images/6a18dd5a-de18-4766-858a-6b45c510375c.png" alt=""></div>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1501065673136mp.jpg" alt="">
+                        <h3>华为全景相机</h3>
+                        <p>360度无界视野 记录美好瞬间</p>
+                        <i>￥</i>
+                        <span>699</span>
+                        <!--<div><img src="images/6a18dd5a-de18-4766-858a-6b45c510375c.png" alt=""></div>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1497325586428mp.jpg" alt="">
+                        <h3>华为运动心率蓝牙耳机</h3>
+                        <p></p>
+                        <i>￥</i>
+                        <span>499</span>
+                        <!--<div><img src="images/6a18dd5a-de18-4766-858a-6b45c510375c.png" alt=""></div>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/428_428_1484106183237mp.jpg" alt="">
+                        <h3>HUAWEI 快速充电器</h3>
+                        <p></p>
+                        <i>￥</i>
+                        <span>899</span>
+                        <!--<div><img src="images/6a18dd5a-de18-4766-858a-6b45c510375c.png" alt=""></div>-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="hwvido w">
+        <img src="images/4131c98a-a010-4fbe-9a50-3a8bfe1a2009.jpg" alt="">
+    </div>
+    <div id="ms"></div>
+    <div class="shiyi_pic">
+        <div class="shiyi">
+            <img src="images/249aff16-ea54-4fff-b114-e489586087ea.png" alt="">
+        </div>
+    </div>
+    <div class="hwvido w">
+        <img src="images/6da2ca9c-bf44-4f01-92e1-1668e4b1e67b.jpg" alt="">
+        <img src="images/5f4ecc45-0091-4af7-9add-df9b684833cc.jpg" alt="" class="last">
+    </div>
+    <div class="shiyi_pic footer">
+        <div class="shiyi">
+            <img src="images/5291bc6d-6c1c-44f6-9a1a-8211605340cc.jpg" alt="">
+            <img src="images/d9065db3-3486-4c87-989f-bda8022895c7.png" alt="">
+            <ul>
+                <li><img src="images/58304bd5-12d0-4196-a114-a23f0064ceb9.png" alt=""></li>
+                <li><img src="images/edf3c9f8-7c4a-4bb4-9c4d-a9d71a0c2f06.png" alt=""></li>
+                <li><img src="images/b27d1ada-4eea-4fc7-8d46-cde0a6a6bea1.png" alt=""></li>
+                <li><img src="images/61ce4d88-e02a-494e-839c-9d54ca86a863.png" alt=""></li>
+                <li><img src="images/fa7ce11f-1009-4fdb-b4c3-b7d5776f60f5.png" alt=""></li>
+                <li><img src="images/e42b9a87-df78-4daa-bd41-2933f0e00cd6.png" alt=""></li>
+            </ul>
+        </div>
+        <a href="javascript:;"></a>
+        <a href="#" class="fhdb"></a>
+    </div>
+</div>
+
+<script>
+    //吸顶事件
+    //1 获取元素
+    var topPart = document.getElementById("topPart");//顶部盒子
+    var navBar = document.getElementById("navBar");//导航盒子
+    var mainPart = document.getElementById("mainPart");//底部的主体盒子
+
+
+    //2 页面滚动时，检测页面的卷曲高度和顶部盒子高度之间的关系
+    window.onscroll = function () {
+        if (myScroll().scrollTop > topPart.offsetHeight) {
+            navBar.className = "fixed";
+            mainPart.style.marginTop = 10 + navBar.offsetHeight + "px";
+        } else {
+            navBar.className = "";
+            mainPart.style.marginTop = 10 + "px";
+        }
+    };
+
+
+    //兼容函数封装：
+    function myScroll() {
+        return {
+            scrollTop: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+            scrollLeft: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft
+        };
+    }
+
+
+</script>
+</body>
+</html>

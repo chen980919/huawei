@@ -1,0 +1,44 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, input,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 0;
+}
+body {
+    font-family:arial,"microsoft yahei";
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:300;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+img {
+    border:0 none;
+    vertical-align: top;
+}
+input {
+    border:0 none;
+}
+.w {
+    width: 1336px;
+    margin:0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:before,.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}

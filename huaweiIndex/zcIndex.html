@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>创建网站账号 - 华为</title>
+		<link rel="stylesheet" href="common.css">
+		<script src="jquery-1.12.4.js"></script>
+		<style>
+			.top {
+				height: 51px;
+				padding-top: 11px;
+				text-align: left;
+				box-shadow: 0px 4px 4px #ddd;
+			}
+			
+			.top-logo {
+				width: 1200px;
+				margin: 0 auto;
+				padding-left: 40px;
+			}
+			
+			.zcd {
+				width: 650px;
+				height: 880px;
+				margin: 0 auto;
+			}
+			
+			.zcd h3 {
+				height: 80px;
+				line-height: 80px;
+				font-size: 24px;
+				color: #ca0b03;
+			}
+			
+			.box {
+				/*box-sizing: border-box;*/
+				background-color: rgb(248, 249, 251);
+				border-radius: 4px;
+				border-top: 8px solid #ca0b03;
+				padding-top: 22px;
+				padding-left: 20px;
+				margin-bottom: 100px;
+			}
+			
+			input {
+				padding-left: 5px;
+				font-size: 16px;
+			}
+			
+			.box h5 {
+				font-size: 16px;
+				height: 35px;
+			}
+			
+			.box h6 {
+				display: inline-block;
+				font-size: 16px;
+				line-height: 40px;
+				height: 40px;
+			}
+			
+			.box .text input {
+				height: 40px;
+				width: 350px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+			
+			.text {
+				padding-left: 130px;
+			}
+			
+			.text span {
+				display: block;
+				height: 45px;
+				line-height: 27px;
+				margin-left: 50px;
+				font-style: italic;
+				color: red;
+			}
+			
+			.text input {
+				margin-left: 12px;
+			}
+			
+			.name {
+				padding-left: 16px;
+			}
+			
+			span i {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				background: url(images/icon_error.png);
+				margin: 0 5px;
+			}
+			
+			.box hr {
+				margin-left: -20px!important;
+				color: #ccc;
+			}
+			
+			.check {
+				padding-top: 13px;
+				padding-left: 170px;
+				font-size: 16px;
+				color: #666;
+			}
+			
+			.check .iagree {
+				width: 430px;
+			}
+			
+			.check P {
+				display: inline-block;
+				width: 415px;
+				height: 28px;
+				line-height: 28px;
+			}
+			
+			.rangnidong {
+				position: relative;
+				top: -27px;
+			}
+			
+			.check .change {
+				margin-top: 25px;
+				width: 440px;
+				font-style: italic;
+				height: 40px;
+			}
+			
+			.change a {
+				color: blue;
+				text-decoration: underline;
+			}
+			
+			.yz {
+				margin-left: -58px;
+				height: 66px;
+			}
+			
+			.yz input {
+				height: 40px;
+				width: 178px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				margin: 0 10px;
+			}
+			
+			.tj {
+				width: 350px;
+				height: 40px;
+				line-height: 40px;
+				background-color: silver;
+				border-radius: 4px;
+				text-align: center;
+				cursor: default;
+			}
+			
+			.tj a {
+				display: inline-block;
+				width: 350px;
+				height: 40px;
+				color: #fff;
+				font-size: 18px;
+				cursor: no-drop;
+			}
+			
+			.tjz {
+				height: 90px;
+			}
+			
+			.copy {
+				height: 64px;
+				line-height: 64px;
+				background-color: rgb(225, 225, 225);
+				font-size: 18px;
+				color: #626262;
+			}
+			
+			.jz {
+				width: 650px;
+				margin: 0 auto;
+			}
+			
+			.email {
+				height: 132px;
+			}
+			
+			.password {
+				height: 132px;
+			}
+			
+			.lastname {
+				height: 87px;
+			}
+			
+			.firstname {
+				height: 87px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				var emaiExp = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+				var psExp = /^\w{8,}$/;
+				var f1, f2, f3, f4, f5, f6, f7;
+				$("#email").blur(function() {
+					if(emaiExp.test($(this).val())) {
+						$(this).next().hide().next().text("邮箱格式正确").css("color", "yellowgreen");
+						f1 = true;
+					} else {
+						$(this).next().show().html("<i></i>格式不正确").next().html("<i></i>请重新输入").css("color", "")
+						f1 = false;
+					}
+					ccc();
+				});
+				$("#password").blur(function() {
+					if(psExp.test($(this).val())) {
+						$(this).next().hide().next().text("密码格式正确").css("color", "yellowgreen");
+						f2 = true;
+					} else {
+						$(this).next().show().html("<i></i>密码格式或者长度不正确").next().html("<i></i>请重新输入").css("color", "")
+						f2 = false;
+					}
+					ccc();
+				});
+				$("#lastName").blur(function() {
+					var tempArr = $(this).val().split("");
+					var flag = false;
+					console.log(tempArr);
+					for(var i = 0; i < tempArr.length; i++) {
+						console.log(tempArr[i]);
+						if(tempArr[i] == "!" || tempArr[i] == " ") {
+							flag = true;
+							break;
+						}
+					}
+					if(flag == true) {
+						$(this).next().show().html("<i></i>不能含有特殊字符");
+						f3 = false;
+					} else if($(this).val() != "") {
+						$(this).next().hide();
+						f3 = true;
+					} else {
+						$(this).next().show().html("<i></i>姓不能为空");
+						f3 = false;
+					}
+					ccc();
+				});
+				$("#firstName").blur(function() {
+					var tempArr = $(this).val().split("");
+					var flag = false;
+					console.log(tempArr);
+					for(var i = 0; i < tempArr.length; i++) {
+						console.log(tempArr[i]);
+						if(tempArr[i] == "!" || tempArr[i] == " ") {
+							flag = true;
+							break;
+						}
+					}
+					if(flag == true) {
+						$(this).next().show().html("<i></i>名不能含有特殊字符");
+						f4 = false;
+					} else if($(this).val() != "") {
+						$(this).next().hide();
+						f4 = true;
+					} else {
+						$(this).next().show().html("<i></i>名不能为空");
+						f4 = false;
+					}
+					ccc();
+				});
+				$("#yzm").blur(function() {
+					if(/^ckji$/i.test($(this).val())) {
+						f7 = true;
+					} else {
+						f7 = false;
+					}
+					ccc();
+				});
+				$("input:checkbox").click(function() {
+					if($("input:checked").length == $("input:checkbox").length) {
+						f5 = true;
+						f6 = true;
+					} else {
+						f5 = false;
+						f6 = false;
+					}
+					ccc();
+				})
+				
+				$("input").keyup(function(){
+					if(/^ckji$/i.test($("#yzm").val())) {
+						f7 = true;
+					} else {
+						f7 = false;
+					}
+					ccc();
+				})
+				
+				
+				function ccc() {
+					if(f1 && f2 && f3 && f4 && f5 && f6 && f7) {
+						$(".tj").css("background-color", "red");
+						$(".tj a").css("cursor", "pointer")
+					} else {
+						$(".tj").css("background-color", "");
+						$(".tj a").css("cursor", "")
+					}
+				}
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--top-->
+		<div class="top">
+			<div class="top-logo">
+				<img src="images/logo_new.png" alt="">
+			</div>
+		</div>
+		<!--banner-->
+		<div class="banner">
+			<form action="">
+				<div class="zcd">
+					<h3>立即注册</h3>
+					<div class="box">
+						<h5>现在就开始创建一个华为账号吧，填写以下信息即可。</h5>
+						<div class="text">
+							<div class="email">
+								<h6>邮箱</h6>
+								<input type="text" id="email">
+								<span><i></i>邮箱不能为空</span>
+								<span><i></i>格式不正确</span>
+							</div>
+							<div class="password">
+								<h6>密码</h6>
+								<input type="password" id="password">
+								<span><i></i>密码不能为空</span>
+								<span><i></i>密码至少应当包含8个字符</span>
+							</div>
+							<div class="lastname">
+								<h6 class="name">姓</h6>
+								<input type="text" id="lastName">
+								<span><i></i>姓不能为空</span>
+							</div>
+							<div class="firstname">
+								<h6 class="name">名</h6>
+								<input type="text" id="firstName">
+								<span><i></i>名不能为空</span>
+							</div>
+						</div>
+						<hr style="border:0;background-color:rgb(233,233,233);height:1px;" />
+						<div class="check">
+							<input type="checkbox" id="check1">
+							<p class="iagree">我愿意接收华为为我推介的相关信息</p>
+							<input type="checkbox" class="rangnidong" id="check2">
+							<p>我愿意接收华为信任的第三方合作伙伴为我推介的华为相关信息</p>
+							<p class="change">* 提交此表格表明你同意接受华为的
+								<a href="javascript:;">隐私保护条款</a>和
+								<a href="javascript:;">使用条款</a>.</p>
+
+							<div class="yz">
+								<h6>验证码</h6>
+								<input type="text" id="yzm">
+								<img src="images/yzm.png" alt="">
+							</div>
+							<div class="tjz">
+								<div class="tj">
+									<a href="">提交</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<!--footer-->
+		<div class="copy">
+			<div class="jz">
+				<p>版权所有 © 华为技术有限公司 1998-2017。保留一切权利。</p>
+			</div>
+		</div>
+	</body>
+
+</html>

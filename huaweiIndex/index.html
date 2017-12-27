@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+          content="电信网络，无线接入, 网络，核心网，业务与软件，站点解决方案，全球服务,系统集成解决方案, 保障服务解决方案,学习与发展解决方案，终端,移动宽带终端, 手机, 融合终端,视讯解决方案">
+    <meta name="description"
+          content="华为是全球领先的信息与通信解决方案供应商。我们围绕客户的需求持续创新，与合作伙伴开放合作，在电信网络、终端和云计算等领域构筑了端到端的解决方案优势。我们致力于为电信运营商、企业和消费者等提供有竞争力的综合解决方案和服务，持续提升客户体验，为客户创造最大价值。目前，华为的产品和解决方案已经应用于140多个国家，服务全球1/3的人口。">
+    <title>华为 - 更美好的全联接世界</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            var count = 0;
+            var timer = null;
+            //图片自动切换
+            function autoPlay() {
+                count++;
+                if (count >= $(".lunB>li").length) {
+                    count = 0;
+                }
+                if (count == 0) {
+                    $(".pico").animate({
+                        right: 250,
+                        opacity: 1
+                    }, 1000, "linear");
+                }
+                if (count == 1) {
+                    $(".pico").animate({
+                        right: -370,
+                        opacity: 0.1
+                    }, 1000, "linear");
+                }
+                if (count == 2) {
+                    $(".pict").animate({
+//                        top:250,
+                        opacity: 1
+                    }, 1000, "linear");
+                }
+                if (count == 0) {
+                    $(".pict").animate({
+//                        top:-250,
+                        opacity: 0
+                    }, 1000, "linear");
+                }
+                $(".an>li").eq(count).addClass("active").siblings().removeClass("active");
+                $(".lunB>li").eq(count).fadeIn(1000).siblings().fadeOut(1000);
+            }
+
+            timer = setInterval(autoPlay, 3000);
+            //     鼠标移入停止 移出自动播放
+            $(".banner").mouseenter(function () {
+                $("span").show();
+                clearInterval(timer);
+                timer = null;
+            })
+            $(".banner").mouseleave(function () {
+                //开启定时器
+                timer = setInterval(autoPlay, 3000);
+                $("span").hide();
+            });
+
+            // 给所有的小li加上鼠标移上事件
+            $(".an>li").mouseover(function () {
+                count = $(this).index();
+                $(".an>li").eq(count).addClass("active").siblings().removeClass("active");
+                $(".lunB>li").eq(count).fadeIn(1000).siblings().fadeOut(1000);
+            })
+            //导向箭头事件
+            var click = 0;
+            $(".leftJ").click(function () {
+                click++;
+                if (click >= $(".lunB>li").length) {
+                    click = 0;
+                }
+                if (click == 0) {
+                    $(".pico").animate({
+                        right: 250,
+                        opacity: 1
+                    }, 1000, "linear");
+                }
+                if (click == 1) {
+                    $(".pico").animate({
+                        right: -370,
+                        opacity: 0.1
+                    }, 1000, "linear");
+                }
+                if (click == 2) {
+                    $(".pict").animate({
+//                        top:250,
+                        opacity: 1
+                    }, 1000, "linear");
+                }
+                if (click == 0) {
+                    $(".pict").animate({
+//                        top:-250,
+                        opacity: 0
+                    }, 1000, "linear");
+                }
+                $(".an>li").eq(click).addClass("active").siblings().removeClass("active");
+                $(".lunB>li").eq(click).fadeIn(1000).siblings().fadeOut(1000);
+            })
+            $(".rightJ").click(function () {
+                click++;
+                if (click >= $(".lunB>li").length) {
+                    click = 0;
+                }
+                if (click == 0) {
+                    $(".pico").animate({
+                        right: 250,
+                        opacity: 1
+                    }, 1000, "linear");
+                }
+                if (click == 1) {
+                    $(".pico").animate({
+                        right: -370,
+                        opacity: 0.1
+                    }, 1000, "linear");
+                }
+                if (click == 2) {
+                    $(".pict").animate({
+//                        top:250,
+                        opacity: 1
+                    }, 1000, "linear");
+                }
+                if (click == 0) {
+                    $(".pict").animate({
+//                        top:-250,
+                        opacity: 0
+                    }, 1000, "linear");
+                }
+                $(".an>li").eq(click).addClass("active").siblings().removeClass("active");
+                $(".lunB>li").eq(click).fadeIn(1000).siblings().fadeOut(1000);
+            })
+        })
+    </script>
+    <script>
+        window.onload = function () {
+            $("#log li:eq(0) a").on({
+                "mouseover": function () {
+                    $(".wxx").stop().slideDown(200);
+                },
+                "mouseout": function () {
+                    $(".wxx").stop().slideUp(200);
+                }
+            })
+            $("#log li:eq(1) a").on({
+                "mouseenter": function () {
+                    $(".xl2").stop().slideDown(200);
+                },
+                "mouseleave": function () {
+                    $(".xl2").stop().slideUp(200);
+                }
+            })
+            $("#log li:eq(2) a").on({
+                "mouseenter": function () {
+                    $(".xl3").stop().slideDown(200);
+                },
+                "mouseleave": function () {
+                    $(".xl3").stop().slideUp(200);
+                }
+            })
+            $("#log li:eq(3) a").on({
+                "mouseenter": function () {
+                    $(".xl4").stop().slideDown(200);
+                },
+                "mouseleave": function () {
+                    $(".xl4").stop().slideUp(200);
+                }
+            })
+            $("#log li:eq(4) a").on({
+                "mouseenter": function () {
+                    $(".xl5").stop().slideDown(200);
+                },
+                "mouseleave": function () {
+                    $(".xl5").stop().slideUp(200);
+                }
+            })
+            $("#log li:eq(5) a").on({
+                "mouseenter": function () {
+                    $(".xl6").stop().slideDown(200);
+                },
+                "mouseleave": function () {
+                    $(".xl6").stop().slideUp(200);
+                }
+            })
+        }
+    </script>
+
+</head>
+<body>
+<!--导航-->
+<div class="top clearfix">
+    <div class="lan w">
+        <div class="topL fr">
+            <a href="javascript:;">选择区域/语言</a>
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">注册</a>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="topN w">
+        <div class="xl1">
+            <div class="wxx w">
+                <ul>
+                    <li>
+                        <img src="images/nav_p10.png" alt="">
+                        <ul>
+                            <li><a href="#">浏览智能手机</a></li>
+                            <li><a href="#">购买手机产品</a></li>
+                            <li><a href="#">获取技术支持</a></li>
+                            <li><a href="#">查找销售门店</a></li>
+                            <li><a href="#">访问消费者网站></a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <img src="images/nav_ebg.png" alt="">
+                        <ul>
+                            <li><a href="#">提交购买需求</a></li>
+                            <li><a href="#">查看成功案例</a></li>
+                            <li><a href="#">查找营销资料</a></li>
+                            <li><a href="#">成为渠道合作伙伴</a></li>
+                            <li><a href="#">访问企业业务网站 ></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/nav_cbg9-21.png" alt="">
+                        <ul>
+                            <li><a href="#">了解行业热点</a></li>
+                            <li><a href="#">了解运营商解决方案</a></li>
+                            <li><a href="#">查找运营商相关产品</a></li>
+                            <li><a href="#">了解运营商服务</a></li>
+                            <li><a href="#">访问运营商业务网站 ></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">联系华为</a></li>
+                            <li><a href="#">关注华为动态</a></li>
+                            <li><a href="#">提出产品建议</a></li>
+                            <li><a href="#">加入华为</a></li>
+                            <li><a href="#" class="online">在线反馈</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="xl2">
+            <ul>
+                <li>
+                    <h3>智能手机</h3>
+                    <img src="images/phone_nav_p10.png" alt="">
+                    <p>HUAWEI P10</p>
+                    <a href="">了解更多 ></a>
+                </li>
+                <li>
+                    <h3>笔记本&平板</h3>
+                    <img src="images/nav-MateBookX-cn.png" alt="">
+                    <p>HUAWEI MateBook X</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>穿戴设备</h3>
+                    <img src="images/nav-band2-cn.png" alt="">
+                    <p>华为运动手环</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>移动宽带</h3>
+                    <img src="images/nav-WiFi2-pro.png" alt="">
+                    <p>华为随行WiFi 2 Pro</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>智能家居</h3>
+                    <img src="images/dropmenu5.png" alt="">
+                    <p>华为路由器Q1</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>配件</h3>
+                    <img src="images/nav-VR-cn.png" alt="">
+                    <p>HUAWEI VR</p>
+                    <a href="">了解更多 ></a></li>
+            </ul>
+        </div>
+        <div class="xl3">
+            <ul>
+                <li>
+                    <h3>企业用户</h3>
+                    <h4>产品</h4>
+                    <p>交换机</p>
+                    <p>路由器</p>
+                    <p>无线局域网</p>
+                    <p>服务器</p>
+                    <p>存储</p>
+                    <p>云计算</p>
+                    <p>数据中心能源</p>
+                    <p>服务</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3></h3>
+                    <h4>解决方案</h4>
+                    <p>云数据中心</p>
+                    <p>企业网络</p>
+                    <p>企业无线</p>
+                    <p>协作</p>
+                    <p>安全</p>
+                    <p>云计算</p>
+                    <p>软件定义网络（SDN</p>
+                    <p>企业移动安全解决方案</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>运营商用户</h3>
+                    <h4>产品</h4>
+                    <p>无线网络</p>
+                    <p>固定网络</p>
+                    <p>云核心网</p>
+                    <p>电信软件</p>
+                    <p>IT基础设施</p>
+                    <p>网络能源</p>
+                    <p>全球服务</p>
+                    <a href="">了解更多 ></a>
+                </li>
+                <li>
+                    <h3></h3>
+                    <h4>解决方案</h4>
+                    <p>业务云化</p>
+                    <p>运营云化</p>
+                    <p>网络云化</p>
+                    <p>最大化网络价值</p>
+                    <a href="">了解更多 ></a>
+                </li>
+            </ul>
+            <div class="xl-t fr">
+                <img src="images/nav_huaweicloud3.jpg" alt="">
+                <a href="">华为云（公有云服务）</a>
+                <img src="images/nav_fusionsolar1.jpg" alt="">
+                <a href="">智能光伏产品</a>
+            </div>
+        </div>
+        <div class="xl4">
+            <ul>
+                <li>
+                    <h3>行业洞察</h3>
+                    <p>共建全联接世界</p>
+                    <p>全球联接指数</p>
+                    <p>物联网</p>
+                    <p>MBB2020</p>
+                    <p>iLab</p>
+                    <a href=""></a></li>
+                <li>
+                    <h3></h3>
+                    <p>市场趋势</p>
+                    <p>技术热点</p>
+                    <p>客户声音</p>
+                    <p>创新</p>
+                    <p>标准与行业贡献</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>热点话题</h3>
+                    <p>NEW ICT,迈向数字转型路</p>
+                    <p>智慧城市</p>
+                    <p>平安城市</p>
+                    <p>数字银行</p>
+                    <p>智能电网</p>
+                    <p>智慧交通</p>
+                    <p>敏捷制造</p>
+                    <p></p>
+                    <a href="">了解更多 ></a>
+                </li>
+                <li>
+                    <h3>新增长之路</h3>
+                    <p>使能视频商业成功</p>
+                    <p>以云服务方式使能垂直行业</p>
+                    <p>敏捷数字化运营</p>
+                    <p>全云化网络支持5G发展</p>
+                    <p>最大化网络价值</p>
+                    <a href="">了解更多 ></a>
+                </li>
+            </ul>
+        </div>
+        <div class="xl5">
+            <ul>
+                <li>
+                    <h3>企业用户</h3>
+                    <h4>产品</h4>
+                    <p>交换机</p>
+                    <p>路由器</p>
+                    <p>无线局域网</p>
+                    <p>服务器</p>
+                    <p>存储</p>
+                    <p>云计算</p>
+                    <p>数据中心能源</p>
+                    <p>服务</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3></h3>
+                    <h4>解决方案</h4>
+                    <p>云数据中心</p>
+                    <p>企业网络</p>
+                    <p>企业无线</p>
+                    <p>协作</p>
+                    <p>安全</p>
+                    <p>云计算</p>
+                    <p>软件定义网络（SDN</p>
+                    <p>企业移动安全解决方案</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>运营商用户</h3>
+                    <h4>产品</h4>
+                    <p>无线网络</p>
+                    <p>固定网络</p>
+                    <p>云核心网</p>
+                    <p>电信软件</p>
+                    <p>IT基础设施</p>
+                    <p>网络能源</p>
+                    <p>全球服务</p>
+                    <a href="">了解更多 ></a>
+                </li>
+                <li>
+                    <h3></h3>
+                    <h4>解决方案</h4>
+                    <p>业务云化</p>
+                    <p>运营云化</p>
+                    <p>网络云化</p>
+                    <p>最大化网络价值</p>
+                    <a href="">了解更多 ></a>
+                </li>
+            </ul>
+            <div class="xl-t fr">
+                <img src="images/nav_huaweicloud3.jpg" alt="">
+                <a href="">华为云（公有云服务）</a>
+                <img src="images/nav_fusionsolar1.jpg" alt="">
+                <a href="">智能光伏产品</a>
+            </div>
+        </div>
+        <div class="xl6">
+            <ul>
+                <li>
+                    <h3>行业洞察</h3>
+                    <h4></h4>
+                    <p>共建全联接世界</p>
+                    <p>全球联接指数</p>
+                    <p>物联网</p>
+                    <p>MBB2020</p>
+                    <p>iLab</p>
+                    <a href=""></a></li>
+                <li>
+                    <h3></h3>
+                    <h4></h4>
+                    <p>市场趋势</p>
+                    <p>技术热点</p>
+                    <p>客户声音</p>
+                    <p>创新</p>
+                    <p>标准与行业贡献</p>
+                    <a href="">了解更多 ></a></li>
+                <li>
+                    <h3>热点话题</h3>
+                    <h4></h4>
+                    <p>智慧城市</p>
+                    <p>平安城市</p>
+                    <p>数字银行</p>
+                    <p>智能电网</p>
+                    <p>智慧交通</p>
+                    <p>敏捷制造</p>
+                    <a href="">了解更多 ></a>
+                </li>
+                <li>
+                    <h3>新增长之路</h3>
+                    <h4></h4>
+                    <p>使能视频商业成功</p>
+                    <p>以云服务方式使能垂直行业</p>
+                    <p>敏捷数字化运营</p>
+                    <p>全云化网络支持5G发展</p>
+                    <p>最大化网络价值</p>
+                    <a href="">了解更多 ></a>
+                </li>
+            </ul>
+            <div class="xl-t fr">
+                <img src="images/nav_huaweicloud3.jpg" alt="">
+                <a href="">华为云（公有云服务）</a>
+                <img src="images/nav_fusionsolar1.jpg" alt="">
+                <a href="">智能光伏产品</a>
+            </div>
+        </div>
+    </div>
+    <div id="log">
+    	<div class="w">
+        <div class="log fl">
+            <a href="javascript:;"><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul class="fl">
+            <li class="wx"><a href="javascript:;"><i></i>我想...</a></li>
+            <li><a href="javascript:;">个人及家用产品</a></li>
+            <li><a href="javascript:;">商用解决方案</a></li>
+            <li><a href="javascript:;">行业话题</a></li>
+            <li><a href="javascript:;">技术支持</a></li>
+            <li><a href="javascript:;">合作伙伴</a></li>
+            <li><a href="javascript:;">开发者</a></li>
+            <li><a href="javascript:;">华为商城</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<div class="lunbo">
+    <div class="banner clearfix">
+        <ul class="lunB">
+            <li><img src="images/mate10-bg-big-banner-cn.jpg" alt=""></li>
+            <li><img src="images/hwcloud-bg-big-banner-v2.jpg" alt=""></li>
+            <li><img src="images/banner_1111_bg.jpg" alt=""></li>
+        </ul>
+        <img src="images/mate10-text-big-banner-cn.png" alt="" class="pico">
+        <!--<img src="images/banner_1111_text_cn_v4.png" alt="" class="pict">-->
+        <ol class="an">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <span class="leftJ"></span>
+        <span class="rightJ"></span>
+    </div>
+</div>
+</div>
+<!--中部-->
+<div id="middle">
+    <div class="mid w">
+        <div class="minLeft fl move">
+            <img src="images/ww-se5-small-banner-cn.jpg" alt="">
+            <h3>迎接未来世界的正确姿势</h3>
+            <p>人工智能应用于医疗、金融、制造、能源、教育等垂直行业，必将与重大的社会经济变革、教育变革、思想变革、文化变革等同步，成为下一次工业革命的核心驱动力。</p>
+            <a href=""></a>
+        </div>
+        <div class="minRight fr">
+            <div class="minRightUp  move">
+                <img src="images/201710-eric-xu-small-banner.jpg" alt="">
+                <h3>数字化转型之马斯洛需求层次</h3>
+                <p>华为轮值CEO郭平：大家都知道，马斯洛有人类需求金字塔，从生理、到安全、到自我实现。在我看来，一个国家在数字化转型方面的需求从低到高，大致也可以分为四个层次。</p>
+            </div>
+            <div class="minRightDown move">
+                <img src="images/small_banner_abb.jpg" alt="">
+                <h3> ABB引领工业数字化变革</h3>
+                <p>ABB的数字化解决方案和连接用户设备的平台，为用户提供云端高级分析服务，通过自动化系统、机器人、引擎等，实现对物理世界的控制，为企业客户创造巨大的价值。</p>
+            </div>
+        </div>
+    </div>
+    <div class="midD w">
+        <div class="midDl fl  midleft">
+            <img src="images/bcw-story-small-banner.jpg" alt="">
+            <h3>我们期待您的联接故事——描绘更美好的全联接世界</h3>
+            <p> 让我们一起勾勒出未来智能社会的蓝图, 未来的生活将如你所想，一切皆有可能。</p>
+        </div>
+        <div class="midDl fr  midlast">
+            <img src="images/softdev-small-banner.png" alt="">
+            <h3>15分钟修炼Web开发秘籍</h3>
+            <p>800元Web开发大礼包任性送。使用软件开发云，体验不一样的Web应用开发。</p>
+        </div>
+    </div>
+    <!--这俩笑了-->
+    <div class="rentou">
+        <div class="but w">
+            <img src="images/bcw_homebanner_xl_cn_v2.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!--新闻-->
+<div class="news">
+	<div class="w">
+    <div class="new-le fl">
+        <h4>新闻</h4>
+        <p>华为云产品CCE通过全球首批 “Kubernetes软件一致性认证”</p>
+        <a>2017-11-14</a>
+        <p>室内数字化助力TELUS率先迈入千兆网络时代</p>
+        <a>2017-11-14</a>
+        <p>华为Wireless X Labs与TPCAST签署合作备忘录 携手开发5G Cloud VR解决方案</p>
+        <a>2017-11-14</a>
+    </div>
+    <div class="new-ri fl">
+        <h4>展会活动</h4>
+        <ul>
+            <li>
+                <img src="images/event-banner-hid-apac.jpg" alt="">
+                <p>2017华为亚太创新日</p>
+                <p>推动数字经济，探索数字化转型之路</p>
+                <p>马来西亚，吉隆坡 11月9日</p>
+            </li>
+            <li>
+                <img src="images/mbbf2017.jpg" alt="">
+                <p>2017全球移动宽带论坛</p>
+                <p>移动重塑世界</p>
+                <p>英国，伦敦 11月15日-16日</p>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="ft w clearfix">
+        <div class="frendlink clearfix fl">
+            <dl>
+                <dt>按访问者</dt>
+                <dd>个人用户</dd>
+                <dd>企业用户</dd>
+                <dd>运营商用户</dd>
+                <dd>新闻媒体</dd>
+                <dd>合作伙伴</dd>
+                <dd>开发者</dd>
+                <dd>供应商</dd>
+                <dd>求职者</dd>
+            </dl>
+            <dl>
+                <dt>关于华为</dt>
+                <dd>公司简介</dd>
+                <dd>公司治理</dd>
+                新闻 & 展会
+                <dd>高管信息</dd>
+                <dd>债券投资者关系</dd>
+                <dd>可持续发展</dd>
+                <dd>网络安全</dd>
+                <dd>出版物</dd>
+                <dd>公司年报</dd>
+            </dl>
+            <dl>
+                <dt>新闻</dt>
+                <dd>安全通告</dd>
+                <dd>展会活动</dd>
+                <dd>行业洞察</dd>
+                <dd>全球联接指数</dd>
+                <dd>MBB 2020</dd>
+                <dd>iLab</dd>
+            </dl>
+            <dl>
+                <dt>快速链接</dt>
+                <dd>华为商城</dd>
+                <dd>荣耀官网</dd>
+                <dd>华为海洋</dd>
+                <dd>产品定义社区</dd>
+                <dd>心声社区</dd>
+                <dd>除名查询</dd>
+                <dd>在线反馈</dd>
+                <dd></dd>
+            </dl>
+        </div>
+        <div class="erm fl">
+            <h3>关注我们</h3>
+            <img src="images/ewm.jpg" alt="">
+            <h3>官方微信</h3>
+        </div>
+    </div>
+    <div class="copy">
+        <p>©2017 华为技术有限公司 粤A2-20044005号</p>
+        <div class="dbl">
+            <a href="javascript:;">联系我们</a>
+            |
+            <a href="javascript:;">隐私保护</a>
+            |
+            <a href="javascript:;">法律声明</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(".minLeft").mouseenter(function(){
+         $(".minLeft>img").stop().animate({left:-20},400);
+         $(".minLeft>h3").stop().animate({bottom:180},400);
+         $(".minLeft>p").stop().animate({bottom:160,opacity:1},400);
+
+    })
+    $(".minLeft").mouseleave(function(){
+        $(".minLeft>img").stop().animate({left:0},400);
+        $(".minLeft>h3").stop().animate({bottom:150},400);
+        $(".minLeft>p").stop().animate({bottom:140,opacity:0},400);
+    })
+    $(".minRightUp").mouseenter(function(){
+         $(".minRightUp>img").stop().animate({left:-20},400);
+         $(".minRightUp>h3").stop().animate({bottom:180},400);
+         $(".minRightUp>p").stop().animate({bottom:160,opacity:1},400);
+
+    })
+    $(".minRightUp").mouseleave(function(){
+        $(".minRightUp>img").stop().animate({left:0},400);
+        $(".minRightUp>h3").stop().animate({bottom:150},400);
+        $(".minRightUp>p").stop().animate({bottom:140,opacity:0},400);
+    })
+    $(".minRightDown").mouseenter(function(){
+        $(".minRightDown>img").stop().animate({left:-20},400);
+        $(".minRightDown>h3").stop().animate({bottom:180},400);
+        $(".minRightDown>p").stop().animate({bottom:160,opacity:1},400);
+
+    })
+    $(".midlast").mouseleave(function(){
+        $(".midlast>img").stop().animate({left:0},400);
+        $(".midlast>h3").stop().animate({bottom:150},400);
+        $(".midlast>p").stop().animate({bottom:140,opacity:0},400);
+    })
+    $(".midlast").mouseenter(function(){
+        $(".midlast>img").stop().animate({left:-20},400);
+        $(".midlast>h3").stop().animate({bottom:180},400);
+        $(".midlast>p").stop().animate({bottom:160,opacity:1},400);
+
+    })
+    $(".minRightDown").mouseleave(function(){
+        $(".minRightDown>img").stop().animate({left:0},400);
+        $(".minRightDown>h3").stop().animate({bottom:150},400);
+        $(".minRightDown>p").stop().animate({bottom:140,opacity:0},400);
+    })
+    $(".midleft").mouseenter(function(){
+        $(".midleft>img").stop().animate({left:-20},400);
+        $(".midleft>h3").stop().animate({bottom:180},400);
+        $(".midleft>p").stop().animate({bottom:160,opacity:1},400);
+
+    })
+    $(".midleft").mouseleave(function(){
+        $(".midleft>img").stop().animate({left:0},400);
+        $(".midleft>h3").stop().animate({bottom:150},400);
+        $(".midleft>p").stop().animate({bottom:140,opacity:0},400);
+    })
+</script>
+
+</html>
